@@ -3,6 +3,6 @@
 
 #### Open SSH and run the three lines below
 
-wget https://raw.github.com/clickdriven/webmin/master/installwebmin.sh
-chmod +x installwebmin.sh
-./installwebmin.sh
+'wget https://raw.github.com/clickdriven/webmin/master/installwebmin.sh'
+'chmod +x installwebmin.sh'
+'./installwebmin.sh'
