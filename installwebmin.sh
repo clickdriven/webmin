@@ -20,8 +20,8 @@ chkconfig httpd on
 service iptables restart
 
 # Install Webmin
-wget http://prdownloads.sourceforge.net/webadmin/webmin-1.730-1.noarch.rpm
-rpm -U webmin-1.730-1.noarch.rpm
+wget http://prdownloads.sourceforge.net/webadmin/webmin-1.780-1.noarch.rpm
+rpm -U webmin-1.780-1.noarch.rpm
 
 # Install Virtualmin
 wget http://software.virtualmin.com/gpl/scripts/install.sh
