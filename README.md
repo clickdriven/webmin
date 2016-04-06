@@ -1,4 +1,4 @@
-## Install of Webmin / Virtualmin / ConfigServer on CentOS 6 x64
+## Install of Webmin / Virtualmin / ConfigServer on CentOS 7 x64
 ### This does not support the setup just the installation
 
 #### Open SSH and run the three lines below
