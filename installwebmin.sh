@@ -1,15 +1,10 @@
-# Add/Enable EPEL Repositories & RPMForge Repository for CentOS 7 64-Bit
-sudo yum install epel-release
-wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
-sudo rpm -Uvh remi-release-7*.rpm
-wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
-sudo rpm -Uvh rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
-wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
-sudo rpm -ivh epel-release-7-5.noarch.rpm
-
-# Add MySQL Repository for CentOS 7 64-Bit
-wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
-sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm
+# Adds RPG & EPEL Repositories
+wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
+rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt
+rpm -i rpmforge-release-0.5.3-1.el6.rf.*.rpm
+wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+rpm -Uvh remi-release-6*.rpm epel-release-6*.rpm
 
 # checks for updates
 yum clean all
